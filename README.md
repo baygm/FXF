@@ -18,7 +18,7 @@ Use encrypt & decrypt String with this following code:
 /*TO ENCRYPT*/
 Decryptor.encrypt("You want to encrypt here");
 /*TO DECRYPT*/
-Decryptor.decrypt("encrypted string by com.bay.fxf.lib here");
+Decryptor.run("encrypted string by com.bay.fxf.lib here");
 ```
 **Example:**
 ``` java
