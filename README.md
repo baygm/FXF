@@ -32,7 +32,7 @@ public class yourClass{
     public static void main(String[] args){
 
        EncryptResult = mDecrypt.encrypt("Hello world!");
-       DecryptResult = mDecrypt.decrypt("AOgP+nMkBazHfXUdAVw/cw==");
+       DecryptResult = mDecrypt.run("AOgP+nMkBazHfXUdAVw/cw==");
        
        System.out.print("Encrypted: "+EncryptResult);
        System.out.print("Decrypted: "+DecryptResult);
