@@ -18,7 +18,7 @@ Use encrypt & decrypt String with this following code:
 /*TO ENCRYPT*/
 Decryptor.encrypt("You want to encrypt here");
 /*TO DECRYPT*/
-Decryptor.run("encrypted string by com.bay.fxf.lib here");
+Decryptor.Run("encrypted string by com.bay.fxf.lib here");
 ```
 **Example:**
 ``` java
@@ -32,7 +32,7 @@ public class yourClass{
     public static void main(String[] args){
 
        EncryptResult = mDecrypt.encrypt("Hello world!");
-       DecryptResult = mDecrypt.run("AOgP+nMkBazHfXUdAVw/cw==");
+       DecryptResult = mDecrypt.Run("AOgP+nMkBazHfXUdAVw/cw==");
        
        System.out.print("Encrypted: "+EncryptResult);
        System.out.print("Decrypted: "+DecryptResult);
