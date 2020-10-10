@@ -4,26 +4,38 @@ Cheat antena view anti banned for Free Fire Game.Support latest version Free Fir
 Work on no root device.Required internet connection.If there is no internet connection, the app doesn't work.
 if you have any questions contact us: cs.kinderboy@gmail.com
 
+
+
+---
+
+
+
 **Note:**
 If you want to fork this repo:
-Use encrypt with this following code:
-
+Use encrypt & decrypt String with this following code:
+``` java
+/*TO ENCRYPT*/
+Decryptor.encrypt("You want to encrypt here");
+/*TO DECRYPT*/
+Decryptor.decrypt("encrypted string by com.bay.fxf.lib here");
+```
+**Example:**
 ``` java
 import com.bay.fxf.lib.Decryptor;
+public class yourClass{
 
-public static String encrypt(String strToEncrypt, String secret) 
-    {
-        try
-        {
-            Decryptor.setKey(secret);
-            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
-            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
-            return Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
-        } 
-        catch (Exception e) 
-        {
+    String EncryptResult;
+    String DecryptResult;
+    Decryptor mDecrypt;
 
-        }
-        return null;
+    public static void main(String[] args){
+
+       EncryptResult = mDecrypt.encrypt("Hello world!");
+       DecryptResult = mDecrypt.decrypt("Encrypted String here!");
+       
+       System.out.print("Encrypted: "+EncryptResult);
+       System.out.print("Decrypted: "+DecryptResult);
+
     }
+  }
 ```
